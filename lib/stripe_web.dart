@@ -6,8 +6,8 @@ import 'package:js/js.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 @JS()
-class _Stripe {
-  external _Stripe(String key);
+class Stripe {
+  external Stripe(String key);
 
   external redirectToCheckout(CheckoutOptions checkoutOptions);
 }
@@ -50,6 +50,6 @@ class StripeWeb {
     @required final String stripeKey,
     @required final CheckoutOptions checkoutOptions,
   }) {
-    _Stripe(stripeKey).redirectToCheckout(checkoutOptions);
+    Stripe(stripeKey).redirectToCheckout(checkoutOptions);
   }
 }
