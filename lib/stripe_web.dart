@@ -5,8 +5,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:js/js.dart';
 
 @JS()
-class Stripe {
-  external Stripe(String key);
+class _Stripe {
+  external _Stripe(String key);
 
   external redirectToCheckout(CheckoutOptions checkoutOptions);
 }
@@ -48,6 +48,6 @@ class StripeWeb {
     @required final String stripeKey,
     @required final CheckoutOptions checkoutOptions,
   }) {
-    Stripe(stripeKey).redirectToCheckout(checkoutOptions);
+    _Stripe(stripeKey).redirectToCheckout(checkoutOptions);
   }
 }

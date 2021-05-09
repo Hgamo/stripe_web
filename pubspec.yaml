@@ -1,7 +1,7 @@
 name: stripe_web
 description: A new flutter plugin project.
 version: 0.0.1
-repository: https://google.com
+repository: https://github.com/Hgamo/stripe_web.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
