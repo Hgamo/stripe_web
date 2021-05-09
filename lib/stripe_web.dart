@@ -3,6 +3,7 @@ library stripe;
 
 import 'package:flutter/cupertino.dart';
 import 'package:js/js.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 @JS()
 class _Stripe {
@@ -44,6 +45,7 @@ class LineItem {
 }
 
 class StripeWeb {
+  static void registerWith(Registrar registrar) {}
   static void redirectToCheckout({
     @required final String stripeKey,
     @required final CheckoutOptions checkoutOptions,

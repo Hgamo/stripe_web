@@ -1,6 +1,6 @@
 name: stripe_web
 description: A new flutter plugin project.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/Hgamo/stripe_web.git
 
 environment:
